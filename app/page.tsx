@@ -2,7 +2,7 @@
 import AnimatedStatsSection from "./components/AnimatedStats";
 import Services from "./components/Services";
 import Star from "./icons/star";
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import About from "./components/About";
 import FAQ from "./components/FAQ";
 import ContactForm from "./components/ContactForm";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 
 export default function Home() {
-  const containerVariants = {
+  const containerVariants : Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -21,7 +21,7 @@ export default function Home() {
     }
   };
 
-  const itemVariants = {
+  const itemVariants : Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,

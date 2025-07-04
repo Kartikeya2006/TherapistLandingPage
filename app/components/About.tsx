@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { motion, easeOut } from "framer-motion";
+import { motion, Variants, easeOut } from "framer-motion";
 import Image from "next/image";
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
     }
   };
 
-  const itemVariants = {
+  const itemVariants : Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
